@@ -1,0 +1,6 @@
+[book]
+authors = ["jiakai"]
+language = "en"
+multilingual = false
+src = "src"
+title = "高级人工智能学习笔记"

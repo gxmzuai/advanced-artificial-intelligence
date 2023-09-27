@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>绪论2 - 高级人工智能学习笔记</title>
+        <title>状态空间与搜索技术 - 高级人工智能学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html" class="active"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html" class="active"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,41 +166,63 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、演绎推理</p>
-<p><img src="https://vip2.loli.io/2023/09/22/93Ht8r2FowJhdGv.webp" alt="" /></p>
-<p>二、归纳学习</p>
-<p><img src="https://vip2.loli.io/2023/09/22/B9wVp4Edqli6ysC.webp" alt="" /></p>
-<p>三、演绎推理 vs 归纳学习</p>
-<p><img src="https://vip2.loli.io/2023/09/22/R8BCT4P2M3lQVG1.webp" alt="" /></p>
-<p>四、课后作业：了解名词</p>
+                        <p>一、随堂检测</p>
+<p><img src="https://vip2.loli.io/2023/09/27/3FsD7LZTOrXlEkq.webp" alt="" /></p>
+<p>题1解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/qm42okuLlF3bWN7.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/vwfHIWiZPdkOaTB.webp" alt="" /></p>
+<p>题2解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/BOxeHPzwTR1lNWh.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/QMfDlyePVAtqZ5I.webp" alt="" /></p>
+<p>题3解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/UPRZCwgxdTIlW7a.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/LFsjtuCM7mkWlEO.webp" alt="" /></p>
+<p>题4解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/VoiMZ87zdYk5LOc.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/klVXoyKgzjGp8EH.webp" alt="" /></p>
+<p>题5解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/C2vJpM69cdlqnwP.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/aY8OsjF1AePvXLW.webp" alt="" /></p>
+<p>题6解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/qQ4oOLklmB2Ysie.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/tQqNSfmDJ1ncGsI.webp" alt="" /></p>
+<p>题7解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/QS3rxN1eGzaksdq.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/uNtAIDRXVsbGO1q.webp" alt="" /></p>
+<p>题8解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/uTBYXfpEZzvanbP.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/zFBM2UiZ3X5xCgE.webp" alt="" /></p>
+<p>题9解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/sn6dkRyJ17bufio.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/ub4pNfGOQtBI9Dc.webp" alt="" /></p>
+<p>题10解析：</p>
+<p><img src="https://vip2.loli.io/2023/09/27/jXsaUgHLpvZVIJ7.webp" alt="" /></p>
+<p>二、问题求解的定义、应用、过程</p>
+<p><img src="https://vip2.loli.io/2023/09/27/15Fa3fjPUoiwdMB.webp" alt="" /></p>
+<p>三、问题求解的挑战</p>
+<p><img src="https://vip2.loli.io/2023/09/27/JV4rXFdqK6D2ziS.webp" alt="" /></p>
+<p>四、盲目搜索 vs 启发式搜索</p>
+<p><img src="https://vip2.loli.io/2023/09/27/qZzlcrhkI96CnOt.webp" alt="" /></p>
+<p>五、状态空间表示的定义、方法、求解过程、应用</p>
+<p><img src="https://vip2.loli.io/2023/09/27/uGx6sU3FV5MX8YP.webp" alt="" /></p>
+<p>四、图搜索的定义和分类</p>
+<p><img src="https://vip2.loli.io/2023/09/27/qdYAO296RLzpCHi.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/09/27/8JQrpIoeLCEk9Bq.webp" alt="" /></p>
+<p>五、图搜索的一般过程</p>
+<p><img src="https://vip2.loli.io/2023/09/27/KVYgcuGmA5lHQaS.webp" alt="" /></p>
+<p>六、农夫过河问题python代码实现</p>
 <ul>
-<li>
-<p>状态空间</p>
-</li>
-<li>
-<p>问题求解</p>
-</li>
-<li>
-<p>盲目搜索和启发搜索</p>
-</li>
-<li>
-<p>博弈</p>
-</li>
+<li><a href="https://chat.openai.com/share/f6c40d0f-4085-470a-b97c-23b3ee9909ed">GPT4 Advanced Data Analysis解答</a></li>
 </ul>
-<p><img src="https://vip2.loli.io/2023/09/22/fYkTJ8R1FrdVBcN.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/09/22/kP6yMFpZtejYEKR.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="230920.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="230922.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="230927.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -208,13 +230,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="230920.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="230922.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="230927.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

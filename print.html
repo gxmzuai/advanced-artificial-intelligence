@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>高级人工智能学习笔记</title>
-        <meta name="robots" content="noindex" />
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -32,7 +32,7 @@
         <!-- Custom theme stylesheets -->
 
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
@@ -62,29 +62,34 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var html = document.querySelector('html');
+            var body = document.querySelector('body');
             var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -117,9 +122,9 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
@@ -318,6 +323,70 @@
 <ul>
 <li><a href="https://chat.openai.com/share/f6c40d0f-4085-470a-b97c-23b3ee9909ed">GPT4 Advanced Data Analysis解答</a></li>
 </ul>
+<div style="break-before: page; page-break-before: always;"></div><p>一、对于状态图搜索，已经提出了许多策略，大体可分为：</p>
+<ul>
+<li>
+<p>盲目搜索(blind search)</p>
+</li>
+<li>
+<p>启发式搜索(heuristic search)</p>
+</li>
+</ul>
+<p>二、盲目搜索</p>
+<p><img src="https://vip2.loli.io/2023/10/08/EVyzamt7pwLXUJu.webp" alt="" /></p>
+<p>三、宽度/广度优先搜索(BFS, Breadth-First Search)</p>
+<p>先访问与当前节点相邻的所有节点，然后再探索下一层的节点。通常使用队列来完成任务。</p>
+<p><img src="https://vip2.loli.io/2023/10/08/F6NnQ5ABbKtliHU.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/aonsQTebEBWNfy3.webp" alt="" /></p>
+<p>注：新的节点被插入到open表的最后。</p>
+<p>四、深度优先搜索(DFS, Depth-First Search)</p>
+<p><img src="https://vip2.loli.io/2023/10/08/EXLjqkSRmTcVstg.webp" alt="" /></p>
+<p>注：</p>
+<ul>
+<li>
+<p>新的节点被插入到open表的最前面。</p>
+</li>
+<li>
+<p>有限的深度搜索(DLS, Depth-Limited Search)</p>
+</li>
+<li>
+<p>迭代深化深度优先算法(IDS, Iterative Deepening Search)</p>
+</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/10/08/SCkzEuG4ecD6oMb.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/UDGEN2Y8VAgmO5c.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/WCF4PSGYeascDJ3.webp" alt="" /></p>
+<p>五、等代价搜索</p>
+<p>注：如果所有连接弧线具有相等代价，则简化为宽度优先算法。</p>
+<p><img src="https://vip2.loli.io/2023/10/08/vDXRN3ixe6jZ5kb.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/o43xQKzhAJy79nk.webp" alt="" /></p>
+<p>六、宽度优先和代价树</p>
+<p><img src="https://vip2.loli.io/2023/10/08/5gPFf8OY2SL1v6a.webp" alt="" /></p>
+<p>七、盲目式搜索小结</p>
+<p><img src="https://vip2.loli.io/2023/10/08/ry91lxnIgbf7VhM.webp" alt="" /></p>
+<p>八、启发式搜索</p>
+<p><img src="https://vip2.loli.io/2023/10/08/6GCUoWPd7XO2rYb.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/3NUwP2qH4m5zoc6.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/qYt7THZS2864NcG.webp" alt="" /></p>
+<p>启发式函数：在启发式搜索中，通常使用一个函数来评估从当前节点到目标节点的预期成本。这个函数被称为启发式函数。</p>
+<p><img src="https://vip2.loli.io/2023/10/08/7vPtVbJflEHgLze.webp" alt="" /></p>
+<p>九、启发式搜索的分类</p>
+<p><img src="https://vip2.loli.io/2023/10/08/xyJ5FZRi4EVWNg1.webp" alt="" /></p>
+<p>十、局部最优</p>
+<p><img src="https://vip2.loli.io/2023/10/08/KWmi1nFlcyLeaso.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/Jgmqeuatzo3wlHk.webp" alt="" /></p>
+<p>十一、A算法</p>
+<p><img src="https://vip2.loli.io/2023/10/08/ngFlLp1zhfroXES.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/4wVZTUtcx8KC6oy.webp" alt="" /></p>
+<p>十二、A*算法</p>
+<p><img src="https://vip2.loli.io/2023/10/08/NxL3Wl4qeAonfIk.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/IM37XSmGcupyLPa.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/eUapxin1frKCvhW.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/08/5aYvoQBqEDJym14.webp" alt="" /></p>
+<p>十三、搜索方法好的标准</p>
+<p><img src="https://vip2.loli.io/2023/10/08/HkjoMXFKz8JZglE.webp" alt="" /></p>
+<p>十四、小结</p>
+<p><img src="https://vip2.loli.io/2023/10/08/VcePbwH2UzaQnGh.webp" alt="" /></p>
 
                     </main>
 

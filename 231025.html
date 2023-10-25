@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>问题规约表示和搜索策略 - 高级人工智能学习笔记</title>
+        <title>机器学习 - 高级人工智能学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li><li class="chapter-item expanded "><a href="231011.html" class="active"><strong aria-hidden="true">5.</strong> 问题规约表示和搜索策略</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">6.</strong> 知识表示1</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">7.</strong> 知识表示2</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">8.</strong> 机器学习</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">5.</strong> 问题规约表示和搜索策略</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">6.</strong> 知识表示1</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">7.</strong> 知识表示2</a></li><li class="chapter-item expanded "><a href="231025.html" class="active"><strong aria-hidden="true">8.</strong> 机器学习</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,59 +171,80 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、问题归约(problem reduction)的简介</p>
-<p><img src="https://vip2.loli.io/2023/10/11/dlH7F2BTiah9OEN.webp" alt="" /></p>
-<p>二、问题归约 vs 状态空间表示</p>
-<p><img src="https://vip2.loli.io/2023/10/11/8gEMzZYAFBoSqNm.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/11/nUc7oudJwOtHhCX.webp" alt="" /></p>
-<p>三、问题归约：以始为终；状态空间：由始至终</p>
-<p><img src="https://vip2.loli.io/2023/10/11/QV5otERS3FpwBGH.webp" alt="" /></p>
-<p>四、与或树的简介</p>
-<p><img src="https://vip2.loli.io/2023/10/11/KR9LCD2aNhsy5Op.webp" alt="" /></p>
-<p>五、与或树的结点概念</p>
-<p><img src="https://vip2.loli.io/2023/10/11/jx31RceuhEqA6df.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/11/5vrdwBJf19oSKcT.webp" alt="" /></p>
-<p>注：终止结点—&gt;中止结点</p>
-<p>六、解树：</p>
-<p><img src="https://vip2.loli.io/2023/10/11/M3QVoRhIxCer4yU.webp" alt="" /></p>
-<p>七、节点是否可解</p>
-<p><img src="https://vip2.loli.io/2023/10/11/thM1uVorl5zjdLZ.webp" alt="" /></p>
-<p>八、与或树的特点</p>
-<p><img src="https://vip2.loli.io/2023/10/11/OlzUFmoL62GKex1.webp" alt="" /></p>
-<p>九、与或树 vs 图搜索</p>
-<p><img src="https://vip2.loli.io/2023/10/11/WUkpjnB7zEoVCra.webp" alt="" /></p>
-<p>十、与或树搜索技术</p>
-<p><img src="https://vip2.loli.io/2023/10/11/1eqRWPDo5zLdhEr.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/11/Wuin7twOXlpD5Bs.webp" alt="" /></p>
-<p>十一、与或树宽度优先搜索(BFS)的基本思想</p>
-<p><img src="https://vip2.loli.io/2023/10/11/q3sJgDeI4lFtQWK.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/11/O1lf8Mdp5tYZn9U.webp" alt="" /></p>
-<p>十二、和宽度优先相比，深度优先算法的特殊之处</p>
-<p><img src="https://vip2.loli.io/2023/10/11/RgF13eL7yuxnEBh.webp" alt="" /></p>
-<p>十三、博弈论(game theory)</p>
-<p>十四、零和博弈和非零和博弈</p>
-<p><img src="https://vip2.loli.io/2023/10/11/oOXZExRhWUSgYwk.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/11/XhwvAlRMpWboNTg.webp" alt="" /></p>
-<p>十五、博弈论的案例及ai在博弈论中的应用</p>
-<p><img src="https://vip2.loli.io/2023/10/11/qKze5O2P81XoJS7.webp" alt="" /></p>
-<p>十六、极大极小搜索</p>
-<p><img src="https://vip2.loli.io/2023/10/11/lS41bneyKBTUJdZ.webp" alt="" /></p>
-<p>十七、α-β减枝技术</p>
-<p><img src="https://vip2.loli.io/2023/10/11/wspB5eGUFc9o1WC.webp" alt="" /></p>
-<p>十八、课堂小结</p>
-<p><img src="https://vip2.loli.io/2023/10/11/5YspzWPkFflqbvL.webp" alt="" /></p>
+                        <p>机器学习概述</p>
+<p>一、人工智能、机器学习、深度学习三者的关系</p>
+<ul>
+<li>人工智能包括机器学习，机器学习包括深度学习。</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/10/25/9JhfSl32UEADn7c.webp" alt="" /></p>
+<ul>
+<li>机器学习的关键词</li>
+</ul>
+<p>算法、经验、性能</p>
+<p><img src="https://vip2.loli.io/2023/10/25/CDjezIJZBcmipGH.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/VqP5siCgjWtn8Nf.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/oEd4pKhULGTsXPZ.webp" alt="" /></p>
+<ul>
+<li>机器学习的发展简史</li>
+</ul>
+<p><img src="https://vip2.loli.io/2023/10/25/nUpdcX5s9Na8my6.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/kAgBZbsDOwYS6NV.webp" alt="" /></p>
+<p>Frank Rosenblatt、Marvin Minsky、Seymour Papert这三者的关系是什么？</p>
+<p><img src="https://vip2.loli.io/2023/10/25/zwKpBIVHmuLbgEY.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/pPdAH15qsUjZBl9.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/Bmf7HiJRO69vNL2.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/THqY9ruAlNQGbO5.webp" alt="" /></p>
+<ul>
+<li>机器学习的分类</li>
+</ul>
+<p>1、监督学习(supervised learning)</p>
+<p><img src="https://vip2.loli.io/2023/10/25/9opiAkf4TU8CNjl.webp" alt="" /></p>
+<p>2、无监督学习(unsupervised learning)</p>
+<p><img src="https://vip2.loli.io/2023/10/25/ITUpkxOCjaDg2bZ.webp" alt="" /></p>
+<p>3、强化学习(reinforcement learning)</p>
+<p><img src="https://vip2.loli.io/2023/10/25/b1kGBp9cQXaYeOo.webp" alt="" /></p>
+<p>4、半监督学习(semi-supervided learning)</p>
+<p><img src="https://vip2.loli.io/2023/10/25/Mqu6gE2VXWtfzoA.webp" alt="" /></p>
+<p>二、课堂习题：https://ks.wjx.top/vm/hlbGnwb.aspx</p>
+<p><img src="https://vip2.loli.io/2023/10/25/X4cOzJRe95rFtQP.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/CIF2vN5pfJnwtUe.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/QuEqdxJn8zKlv4S.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/irCpGt3TIDFQnlH.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/8Yw6GVbEi4lnyP7.png" alt="20231025134104" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/NitZbUkw51oxQrp.png" alt="20231025134124" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/PovKOX9VEQFTqMz.png" alt="20231025134151" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/mgbeNH7rpL3ZzlE.png" alt="20231025134403" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/yzftdm7bHEnqZav.png" alt="20231025134207" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/qts15fEehdIyKgi.png" alt="20231025134617" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/uqf3bsYGdkKCPQU.png" alt="20231025134218" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/T8guZIVXcaF71mi.png" alt="20231025134749" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/NA5Jn7lLH2c4g1r.png" alt="20231025134227" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/Ehl3tm1GeVPdXND.webp" alt="" /></p>
+<p>三、监督学习和无监督学习的优劣</p>
+<p><img src="https://vip2.loli.io/2023/10/25/D7JVSvc2RaT1l3t.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/RckAiL7ywgMU4JN.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/25/TtLY7FKO8qkBXrC.webp" alt="" /></p>
+<p>四、机器学习和统计学习中的模型和算法的差异是什么？</p>
+<p><img src="https://vip2.loli.io/2023/10/25/orwZE6JlgPHXTCi.webp" alt="" /></p>
+<p>注：</p>
+<ul>
+<li>在机器学习中，全局最优解的计算经常使用梯度下降法。</li>
+</ul>
+<p>五、损失函数和模型评价</p>
+<p><img src="https://vip2.loli.io/2023/10/25/MudmsrUNy5Tob8H.webp" alt="" /></p>
+<p>六、卷积是为了降维？</p>
+<p><img src="https://vip2.loli.io/2023/10/25/oTUJMuEO42f5pCX.webp" alt="" /></p>
+<p>七、泛化在机器学习中是什么意思？</p>
+<p><img src="https://vip2.loli.io/2023/10/25/p8uK3G7ni2ShcDO.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="231008.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="231020.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="231013.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -231,13 +252,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="231008.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="231020.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="231013.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

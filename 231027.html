@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>机器学习1 - 高级人工智能学习笔记</title>
+        <title>机器学习2 - 高级人工智能学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">5.</strong> 问题规约表示和搜索策略</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">6.</strong> 知识表示1</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">7.</strong> 知识表示2</a></li><li class="chapter-item expanded "><a href="231025.html" class="active"><strong aria-hidden="true">8.</strong> 机器学习1</a></li><li class="chapter-item expanded "><a href="231027.html"><strong aria-hidden="true">9.</strong> 机器学习2</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">5.</strong> 问题规约表示和搜索策略</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">6.</strong> 知识表示1</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">7.</strong> 知识表示2</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">8.</strong> 机器学习1</a></li><li class="chapter-item expanded "><a href="231027.html" class="active"><strong aria-hidden="true">9.</strong> 机器学习2</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,83 +171,78 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>机器学习概述</p>
-<p>一、人工智能、机器学习、深度学习三者的关系</p>
-<ul>
-<li>人工智能包括机器学习，机器学习包括深度学习。</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/25/9JhfSl32UEADn7c.webp" alt="" /></p>
-<ul>
-<li>机器学习的关键词</li>
-</ul>
-<p>算法、经验、性能</p>
-<p><img src="https://vip2.loli.io/2023/10/25/CDjezIJZBcmipGH.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/VqP5siCgjWtn8Nf.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/oEd4pKhULGTsXPZ.webp" alt="" /></p>
-<ul>
-<li>机器学习的发展简史</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/25/nUpdcX5s9Na8my6.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/kAgBZbsDOwYS6NV.webp" alt="" /></p>
-<p>Frank Rosenblatt、Marvin Minsky、Seymour Papert这三者的关系是什么？</p>
-<p><img src="https://vip2.loli.io/2023/10/25/zwKpBIVHmuLbgEY.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/pPdAH15qsUjZBl9.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/Bmf7HiJRO69vNL2.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/THqY9ruAlNQGbO5.webp" alt="" /></p>
-<ul>
-<li>机器学习的分类</li>
-</ul>
-<p>1、监督学习(supervised learning)</p>
-<p><img src="https://vip2.loli.io/2023/10/25/9opiAkf4TU8CNjl.webp" alt="" /></p>
-<p>2、无监督学习(unsupervised learning)</p>
-<p><img src="https://vip2.loli.io/2023/10/25/ITUpkxOCjaDg2bZ.webp" alt="" /></p>
-<p>3、强化学习(reinforcement learning)</p>
-<p><img src="https://vip2.loli.io/2023/10/25/b1kGBp9cQXaYeOo.webp" alt="" /></p>
-<p>4、半监督学习(semi-supervided learning)</p>
-<p><img src="https://vip2.loli.io/2023/10/25/Mqu6gE2VXWtfzoA.webp" alt="" /></p>
-<p>二、课堂习题：https://ks.wjx.top/vm/hlbGnwb.aspx</p>
-<p><img src="https://vip2.loli.io/2023/10/25/X4cOzJRe95rFtQP.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/CIF2vN5pfJnwtUe.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/QuEqdxJn8zKlv4S.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/irCpGt3TIDFQnlH.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/8Yw6GVbEi4lnyP7.png" alt="20231025134104" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/NitZbUkw51oxQrp.png" alt="20231025134124" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/PovKOX9VEQFTqMz.png" alt="20231025134151" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/mgbeNH7rpL3ZzlE.png" alt="20231025134403" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/yzftdm7bHEnqZav.png" alt="20231025134207" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/qts15fEehdIyKgi.png" alt="20231025134617" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/uqf3bsYGdkKCPQU.png" alt="20231025134218" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/T8guZIVXcaF71mi.png" alt="20231025134749" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/NA5Jn7lLH2c4g1r.png" alt="20231025134227" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/Ehl3tm1GeVPdXND.webp" alt="" /></p>
-<p>三、监督学习和无监督学习的优劣</p>
-<p><img src="https://vip2.loli.io/2023/10/25/D7JVSvc2RaT1l3t.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/RckAiL7ywgMU4JN.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/25/TtLY7FKO8qkBXrC.webp" alt="" /></p>
-<p>四、机器学习和统计学习中的模型和算法的差异是什么？</p>
-<p><img src="https://vip2.loli.io/2023/10/25/orwZE6JlgPHXTCi.webp" alt="" /></p>
-<p>注：</p>
-<ul>
-<li>在机器学习中，全局最优解的计算经常使用梯度下降法。</li>
-</ul>
-<p>五、损失函数和模型评价</p>
-<p><img src="https://vip2.loli.io/2023/10/25/MudmsrUNy5Tob8H.webp" alt="" /></p>
-<p>六、卷积是为了降维？</p>
-<p><img src="https://vip2.loli.io/2023/10/25/oTUJMuEO42f5pCX.webp" alt="" /></p>
-<p>七、泛化在机器学习中是什么意思？</p>
-<p><img src="https://vip2.loli.io/2023/10/25/p8uK3G7ni2ShcDO.webp" alt="" /></p>
+                        <h2 id="无监督学习"><a class="header" href="#无监督学习">无监督学习</a></h2>
+<p>无监督学习的概念</p>
+<p><img src="https://vip2.loli.io/2023/10/27/5PRiCor3majXdxH.webp" alt="" /></p>
+<p>无监督学习对比监督学习的难点</p>
+<p><img src="https://vip2.loli.io/2023/10/27/nyutGU4blfBqe8L.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/pqXMCHzNvU8yZP7.webp" alt="" /></p>
+<p>聚类的概念</p>
+<p><img src="https://vip2.loli.io/2023/10/27/4nC1fAcdqoy2UVw.webp" alt="" /></p>
+<p>降维的概念</p>
+<p><img src="https://vip2.loli.io/2023/10/27/dfriG7LSDkw1enq.webp" alt="" /></p>
+<p>降维中的线性和非线性</p>
+<p><img src="https://vip2.loli.io/2023/10/27/682Jh91IUqNxrYv.webp" alt="" /></p>
+<p>概率估计</p>
+<p><img src="https://vip2.loli.io/2023/10/27/zxruOlTqhHUN496.webp" alt="" /></p>
+<p>概率图模型的核心组件</p>
+<p><img src="https://vip2.loli.io/2023/10/27/rZEyIU5W9CJbomL.webp" alt="" /></p>
+<p>小结</p>
+<p><img src="https://vip2.loli.io/2023/10/27/XOGbxc9tZzFIC3a.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/u5vrnaDh4HpVgFl.webp" alt="" /></p>
+<h2 id="优化算法"><a class="header" href="#优化算法">优化算法</a></h2>
+<p><img src="https://vip2.loli.io/2023/10/27/lhrqALIdaey7H4i.webp" alt="" /></p>
+<p>梯度下降</p>
+<p><img src="https://vip2.loli.io/2023/10/27/KNFm4oY2hXvridk.webp" alt="" /></p>
+<p>如何理解梯度的方向是函数值变化最快的方向，梯度相反的方向，是函数值下降最快的方向？</p>
+<p><img src="https://vip2.loli.io/2023/10/27/aHwjlpT3AXUrvBO.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/MLbcSfh54XtoT2J.webp" alt="" /></p>
+<p>梯度下降三种不同的形式</p>
+<p><img src="https://vip2.loli.io/2023/10/27/dM2iYgeznlcCSZa.webp" alt="" /></p>
+<p>BGD、SGD、MBGD三者的概念，区别与联系</p>
+<p><img src="https://vip2.loli.io/2023/10/27/HEPyBYKocaukv5d.webp" alt="" /></p>
+<p>超参数</p>
+<p><img src="https://vip2.loli.io/2023/10/27/sOjaUMh9RBGzXy6.webp" alt="" /></p>
+<h2 id="回归"><a class="header" href="#回归">回归</a></h2>
+<p><img src="https://vip2.loli.io/2023/10/27/1rp28DcBlt7dC9f.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/Z8ykc1tIEU7RT6D.webp" alt="" /></p>
+<p>机器学习回归中的线性回归和非线性回归</p>
+<p><img src="https://vip2.loli.io/2023/10/27/2cfwTryLKVFvuRk.webp" alt="" /></p>
+<p>损失函数</p>
+<p>损失函数，也称为代价函数或误差函数，是用于评估机器学习模型预测与真实值之间差距的函数。通过最小化损失函数，我们可以调整模型的参数以提高其性能。</p>
+<p><img src="https://vip2.loli.io/2023/10/27/RnBD8EAZxLiYOl7.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/tsRZioryuU1xwFq.webp" alt="" /></p>
+<p>梯度下降算法</p>
+<p><img src="https://vip2.loli.io/2023/10/27/9QJmxdwUuXkVqLj.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/i2A9HxpyMDh1cj7.webp" alt="" /></p>
+<p>参数与超参数</p>
+<p><img src="https://vip2.loli.io/2023/10/27/TkCm9DGlbo6PuEZ.webp" alt="" /></p>
+<p>拟合程度</p>
+<p><img src="https://vip2.loli.io/2023/10/27/WPYcrxSEwGl1osy.webp" alt="" /></p>
+<p>提高泛化能力的方法</p>
+<p><img src="https://vip2.loli.io/2023/10/27/Nw3cEbMGYP8nBsX.webp" alt="" /></p>
+<h2 id="分类"><a class="header" href="#分类">分类</a></h2>
+<p>分类模型</p>
+<p><img src="https://vip2.loli.io/2023/10/27/k7j8gsWzTYOKvND.webp" alt="" /></p>
+<p>判别式模型</p>
+<p><img src="https://vip2.loli.io/2023/10/27/JFYgGk45AXivjrH.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/gZP8yRlAJsH7LOk.webp" alt="" /></p>
+<p>生成式模型</p>
+<p><img src="https://vip2.loli.io/2023/10/27/IFVf2GJQKXroOld.webp" alt="" /></p>
+<p>两类方法比较</p>
+<p><img src="https://vip2.loli.io/2023/10/27/JXAcYLef2HFMBbk.webp" alt="" /></p>
+<p><img src="https://vip2.loli.io/2023/10/27/EKJspBFbjGZet4h.webp" alt="" /></p>
+<p>模型的评价</p>
+<p><img src="https://vip2.loli.io/2023/10/27/ReVMNmGydl4JUpH.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="231020.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="231025.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="231027.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -255,13 +250,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="231020.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="231025.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="231027.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

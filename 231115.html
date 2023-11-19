@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>知识表示1 - 高级人工智能学习笔记</title>
+        <title>机器学习算法 - 高级人工智能学习笔记</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">5.</strong> 问题规约表示和搜索策略</a></li><li class="chapter-item expanded "><a href="231013.html" class="active"><strong aria-hidden="true">6.</strong> 知识表示1</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">7.</strong> 知识表示2</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">8.</strong> 机器学习1</a></li><li class="chapter-item expanded "><a href="231027.html"><strong aria-hidden="true">9.</strong> 机器学习2</a></li><li class="chapter-item expanded "><a href="231115.html"><strong aria-hidden="true">10.</strong> 机器学习算法</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="230920.html"><strong aria-hidden="true">1.</strong> 绪论1</a></li><li class="chapter-item expanded "><a href="230922.html"><strong aria-hidden="true">2.</strong> 绪论2</a></li><li class="chapter-item expanded "><a href="230927.html"><strong aria-hidden="true">3.</strong> 状态空间与搜索技术</a></li><li class="chapter-item expanded "><a href="231008.html"><strong aria-hidden="true">4.</strong> 图搜索策略</a></li><li class="chapter-item expanded "><a href="231011.html"><strong aria-hidden="true">5.</strong> 问题规约表示和搜索策略</a></li><li class="chapter-item expanded "><a href="231013.html"><strong aria-hidden="true">6.</strong> 知识表示1</a></li><li class="chapter-item expanded "><a href="231020.html"><strong aria-hidden="true">7.</strong> 知识表示2</a></li><li class="chapter-item expanded "><a href="231025.html"><strong aria-hidden="true">8.</strong> 机器学习1</a></li><li class="chapter-item expanded "><a href="231027.html"><strong aria-hidden="true">9.</strong> 机器学习2</a></li><li class="chapter-item expanded "><a href="231115.html" class="active"><strong aria-hidden="true">10.</strong> 机器学习算法</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,117 +171,27 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>一、知识表示的概述</p>
+                        <p>1、课堂关键词</p>
 <ul>
-<li>知识的分类</li>
+<li>
+<p>决策树</p>
+</li>
+<li>
+<p>朴素贝叶斯</p>
+</li>
+<li>
+<p>k近邻算法</p>
+</li>
 </ul>
-<p><img src="https://vip2.loli.io/2023/10/14/2u97ZGVd1QJlAif.webp" alt="" /></p>
-<ul>
-<li>知识的要素</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/imAWMI21LwkQ3yC.webp" alt="" /></p>
-<ul>
-<li>知识的特性</li>
-</ul>
-<p>1、相对正确性</p>
-<p>2、不确定性</p>
-<p>3、可表示性</p>
-<p>4、可利用性</p>
-<ul>
-<li>知识表示的要求</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/dJXODUMWpoAzGaI.webp" alt="" /></p>
-<ul>
-<li>知识表示的方法</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/U4aCpWKvzTFnIs8.webp" alt="" /></p>
-<p>二、一阶谓词逻辑</p>
-<p><img src="https://vip2.loli.io/2023/10/14/UXqT4fdhRboJIg1.webp" alt="" /></p>
-<ul>
-<li>命题</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/g3or2epQCqfWXmV.webp" alt="" /></p>
-<ul>
-<li>命题的分类</li>
-</ul>
-<p>1、简单命题</p>
-<p>2、复合命题</p>
-<ul>
-<li>真值表中P—&gt;Q的解释</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/A2mSqPiQcK6OpNv.webp" alt="" /></p>
-<ul>
-<li>谓词演算</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/IHirbANoqU2QfG8.webp" alt="" /></p>
-<ul>
-<li>量词</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/i1l5jysmdDM3KL8.webp" alt="" /></p>
-<ul>
-<li>一阶谓词演算的条件</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/JtCHhcdLuW6Uk7S.webp" alt="" /></p>
-<ul>
-<li>谓词公式</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/tH3QL1VSnY4CroG.webp" alt="" /></p>
-<ul>
-<li>逻辑表示的优缺点</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/VvlGCmPi6LM2agq.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/14/i6QrAkxTFud19XK.webp" alt="" /></p>
-<ul>
-<li>命题演算 vs 谓词演算</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/et3LIJDGmubH61w.webp" alt="" /></p>
-<p>三、产生式表示法</p>
-<ul>
-<li>产生式</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/wBH8LQgAkOCyijW.webp" alt="" /></p>
-<ul>
-<li>产生式表示法的应用</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/lb5EYVcxIu3tNUS.webp" alt="" /></p>
-<ul>
-<li>产生式表示法的表示范围</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/IpA7vJP3QUWNgDl.webp" alt="" /></p>
-<p>注：不确定性规则和不确定性事实表示时均要加上置信度。</p>
-<ul>
-<li>产生式与蕴涵式的主要区别</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/95h3IolqFUwnQGb.webp" alt="" /></p>
-<ul>
-<li>产生式与if条件语句的主要区别</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/3yJSrEHLbYGZgdp.webp" alt="" /></p>
-<ul>
-<li>产生式系统</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/kGROTt1ov9zsrxg.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/14/A6by98FlCXgjTUz.webp" alt="" /></p>
-<p>注：</p>
-<p>1、规则库是产生式系统求解问题的基础。</p>
-<ul>
-<li>产生式表示法的优缺点</li>
-</ul>
-<p><img src="https://vip2.loli.io/2023/10/14/JC9Y8S3FMa6dGQZ.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/14/E9t4TaiRKVkO2Ng.webp" alt="" /></p>
-<p><img src="https://vip2.loli.io/2023/10/14/MHrvbzGglktc2eE.webp" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="231011.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="231027.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="231020.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -289,13 +199,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="231011.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="231027.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="231020.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

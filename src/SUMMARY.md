@@ -38,16 +38,20 @@
 
 - [神经网络上机作业](231215.md)
 
-- [自然语言处理上机课](231219.md)
+- [自然语言处理上机课1](231219.md)
 
-- [广西民族大学高级人工智能期末复习笔记（1）](final-exam-review1.md)
+- [自然语言处理上机课2](231220.md)
 
-- [广西民族大学高级人工智能期末复习笔记（2）](final-exam-review2.md)
+- [期末复习笔记1](final-exam-review1.md)
 
-- [广西民族大学高级人工智能期末复习笔记（3）](final-exam-review3.md)
+- [期末复习笔记2](final-exam-review2.md)
 
-- [广西民族大学高级人工智能期末复习笔记（4）](final-exam-review4.md)
+- [期末复习笔记3](final-exam-review3.md)
 
-- [广西民族大学高级人工智能期末复习笔记（5）](final-exam-review5.md)
+- [期末复习笔记4](final-exam-review4.md)
 
-- [广西民族大学高级人工智能期末复习笔记（6）](final-exam-review6.md)
+- [期末复习笔记5](final-exam-review5.md)
+
+- [期末复习笔记6](final-exam-review6.md)
+
+- [期末复习笔记7](final-exam-review7.md)

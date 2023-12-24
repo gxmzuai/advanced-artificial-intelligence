@@ -55,3 +55,7 @@
 - [期末复习笔记6](final-exam-review6.md)
 
 - [期末复习笔记7](final-exam-review7.md)
+
+- [期末复习笔记8](final-exam-review8.md)
+
+- [期末复习笔记9](final-exam-review9.md)

@@ -63,3 +63,7 @@
 - [期末复习笔记10](final-exam-review10.md)
 
 - [期末复习笔记11](final-exam-review11.md)
+
+- [期末复习笔记12](final-exam-review12.md)
+
+- [期末复习笔记13](final-exam-review13.md)

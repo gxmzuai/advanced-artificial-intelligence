@@ -69,3 +69,7 @@
 - [期末复习笔记13](final-exam-review13.md)
 
 - [期末复习笔记14](final-exam-review14.md)
+
+- [期末复习笔记15](final-exam-review14.md)
+
+- [期末复习资料](final-exam-points.md)

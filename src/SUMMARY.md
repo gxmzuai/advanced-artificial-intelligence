@@ -70,6 +70,8 @@
 
 - [期末复习笔记14](final-exam-review14.md)
 
-- [期末复习笔记15](final-exam-review14.md)
+- [期末复习笔记15](final-exam-review15.md)
+
+- [期末复习笔记16](final-exam-review16.md)
 
 - [期末复习资料](final-exam-points.md)

@@ -75,3 +75,5 @@
 - [期末复习笔记16](final-exam-review16.md)
 
 - [期末复习资料](final-exam-points.md)
+
+- [期末考试回顾](final-exam-review.md)

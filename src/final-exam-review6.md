@@ -5,7 +5,7 @@
 
 1、现在人工智能有哪些学派?它们的认知观是什么?现在这些学 派的关系如何?
 
-![](https://img.gujiakai.cn/i/2023/12/19/p504s4-0.webp)
+![](https://image.gujiakai.top/i/2023/12/19/p504s4-0.webp)
 
 
 ## 习题2
